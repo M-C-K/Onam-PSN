@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Onam at Prestige Shantiniketan | Celebrating Since 2013</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="petal-bg" id="petalBg"></div>
+
+<header class="navbar">
+  <div class="nav-inner">
+    <div class="brand">
+      <img src="logos/Thattakam Logo_white.png" alt="Thattakam Logo" class="thattakam-logo">
+      <div class="logo"><span class="float-flower" style="animation-delay:0s">🌺</span><span class="float-flower" style="animation-delay:0.4s">🌼</span><span class="float-flower" style="animation-delay:0.8s">🏵️</span> ഓണം <span class="float-flower" style="animation-delay:1.2s">🌼</span> <span>PSN</span></div>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#legacy">Legacy</a>
+      <a href="#highlights">Highlights</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#voices">Voices</a>
+    </nav>
+  </div>
+</header>
+
+<section id="home" class="hero">
+  <div class="hero-slider" id="heroSlider"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-kicker">Prestige Shantiniketan • Thattakam Cultural Committee</p>
+    <h1>Onam <span class="accent">Since 2013</span></h1>
+    <p class="hero-sub">A grand homecoming of harvest, heritage &amp; happiness — woven together by our community, year after year.</p>
+    <a href="#gallery" class="btn-primary">Explore the Celebrations ↓</a>
+  </div>
+  <button id="audioToggle" class="audio-toggle" aria-label="Toggle chenda melam music">
+    <span id="audioIcon">🥁</span> <span id="audioLabel">Play Chenda Melam</span>
+  </button>
+  <audio id="bgAudio" src="saseendran-kerala-onam-music-391845.mp3" loop preload="auto"></audio>
+  <div class="scroll-hint">scroll</div>
+</section>
+
+<section id="legacy" class="legacy">
+  <div class="legacy-inner">
+    <h2 class="section-title">A Tradition That Has Grown With Us</h2>
+    <p class="legacy-text">
+      Since 2013, the residents of Prestige Shantiniketan have come together every harvest season to celebrate
+      Onam — not as an event, but as a homecoming. From a humble Pookkalam laid by a handful of families to a
+      three-day extravaganza with live concerts, Theyyam performances, Kalaripayattu and a community Sadya feast,
+      Onam at PSN has become the heartbeat of our togetherness.
+    </p>
+    <div class="legacy-stats">
+      <div class="stat"><span class="stat-num">12+</span><span class="stat-label">Years of Celebration</span></div>
+      <div class="stat"><span class="stat-num">3</span><span class="stat-label">Days of Festivities</span></div>
+      <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Community Spirit</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="highlights" class="highlights">
+  <h2 class="section-title light">Moments That Defined Our Onam Celebrations</h2>
+  <p class="section-sub">Straight from the hearts of our residents, year after year</p>
+  <div class="highlight-grid">
+    <div class="highlight-card">
+      <h3>Agam in Concert</h3>
+      <p>"A divine performance" — the rocking finale that brought the house down, ending the festival with a bang.</p>
+    </div>
+    <div class="highlight-card">
+      <h3>Theyyam</h3>
+      <p>Over the years, we have brought eminent artists to perform this breathtaking, fiery ritual art form, giving residents an unforgettable brush with Kerala's mystique.</p>
+    </div>
+    <div class="highlight-card">
+      <h3>Kathakali</h3>
+      <p>Renowned Kathakali artists have graced our stage over the years, bringing elaborate makeup, vivid costumes and expressive storytelling to life.</p>
+    </div>
+    <div class="highlight-card">
+      <h3>Thayambaka</h3>
+      <p>We have hosted eminent percussionists over the years for this thunderous solo chenda performance, its rhythmic crescendos bringing the audience to its feet.</p>
+    </div>
+    <div class="highlight-card">
+      <h3>Kalaripayattu</h3>
+      <p>Centuries-old martial artistry performed live, blending discipline, drama and pure adrenaline.</p>
+    </div>
+    <div class="highlight-card">
+      <h3>Stand-up Comedy</h3>
+      <p>Abish Mathew &amp; Sai Kiran had the whole community in splits — "an absolute laugh riot."</p>
+    </div>
+    <div class="highlight-card">
+      <h3>Pookkalam</h3>
+      <p>Vibrant floral carpets crafted by residents, turning the courtyard into a canvas of colour.</p>
+    </div>
+    <div class="highlight-card">
+      <h3>Onam Sadya</h3>
+      <p>"Lip-smacking" and served with love — the grand feast that always wins hearts.</p>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="gallery">
+  <h2 class="section-title">Gallery</h2>
+  <p class="section-sub">Captured moments from our Onam celebrations</p>
+  <div class="gallery-grid" id="galleryGrid"></div>
+</section>
+
+<section id="voices" class="voices">
+  <h2 class="section-title">Community Voices</h2>
+  <p class="section-sub">What our residents said after Onam 2025</p>
+  <div class="voices-track-wrap">
+    <div class="voices-track" id="voicesTrack"></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>Onam at Prestige Shantiniketan — celebrating culture, community &amp; togetherness since 2013.</p>
+  <p class="footer-small">Made with ❤️ by the Thattakam Cultural Committee</p>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close" id="lightboxClose">&times;</span>
+  <img src="" id="lightboxImg" alt="">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
