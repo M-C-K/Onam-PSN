@@ -91,6 +91,35 @@ function randomPookkalamColor() {
 }
 setInterval(randomPookkalamColor, 4000);
 
+// Scrolling strips of previous years' photos (2024 & 2025)
+const yearPhotos2024 = [
+  { src: "Gallery/Previous years/2024/1.jpg", label: "2024" },
+  { src: "Gallery/Previous years/2024/2.jpg", label: "2024" },
+  { src: "Gallery/Previous years/2024/3.jpg", label: "2024" },
+  { src: "Gallery/Previous years/2024/AnoopShankar.jpg", label: "2024 — Anoop Shankar Experience" }
+];
+const yearPhotos2025 = [
+  { src: "Gallery/Previous years/2025/1.jpg", label: "2025" },
+  { src: "Gallery/Previous years/2025/2.jpg", label: "2025" },
+  { src: "Gallery/Previous years/2025/3.jpg", label: "2025" }
+];
+function renderYearsStrip(containerId, yearPhotos) {
+  const strip = document.getElementById(containerId);
+  if (!strip) return;
+  for (let i = 0; i < 2; i++) {
+    yearPhotos.forEach(({ src, label }) => {
+      const img = document.createElement("img");
+      img.src = encodeURI(src);
+      img.alt = `Onam ${label}`;
+      img.loading = "lazy";
+      img.addEventListener("click", () => openLightbox(src));
+      strip.appendChild(img);
+    });
+  }
+}
+renderYearsStrip("yearsStrip2024", yearPhotos2024);
+renderYearsStrip("yearsStrip2025", yearPhotos2025);
+
 // Gallery
 const galleryGrid = document.getElementById("galleryGrid");
 photos.forEach((src, i) => {
