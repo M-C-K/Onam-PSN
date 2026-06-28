@@ -8,7 +8,6 @@ const photos = [
   "Gallery/Hero slider/515733858_10162526609072296_664540732766483954_n.jpg",
   "Gallery/Hero slider/515935448_10162526360887296_8663058091710262468_n.jpg",
   "Gallery/516444766_10162526360952296_8996214436923751095_n.jpg",
-  "Gallery/Hero slider/516779722_10162526359712296_3342126654708734186_n.jpg",
   "Gallery/516812515_10162529463277296_2782708723426224728_n.jpg",
   "Gallery/Hero slider/516859216_10162526609592296_491945289108939416_n.jpg",
   "Gallery/549289106_10162846425997296_3640500600429319716_n.jpg",
@@ -29,7 +28,13 @@ const testimonials = [
   "AGAM indeed is a wonderful performing troupe. Excellent songs with thrilling music and amazing sound and light system.",
   "Kudos to Team Onam! Amazing programs, perfect lights & sound, and the pandal-style décor made the auditorium look stunning.",
   "Your pandal was grand and the music and sound was exceptionally good. Everything was so grand yet so grounded.",
-  "Onam Sadya was too good. Anything that's served with love always wins heart. You all are instrumental in keeping our culture and traditions alive."
+  "Onam Sadya was too good. Anything that's served with love always wins heart. You all are instrumental in keeping our culture and traditions alive.",
+  "Anoop Shankar .. oh my God! What a voice.. what a talent … set such a romantic mood I want to believe in love again! What versatility, humble, and he seemed to be getting energy from the crowd and he so wanted to please everybody and my God I swear he did it so well!",
+  "Our Heartiest Congratulations to Ponn Onam Organising Team for the Wonderful Function. The Anoop Sankar Live was a fantastic musical evening and indeed icing on the Cake. Well done Guys 👍.",
+  "Paisa vasool is an understatement.. wait the concert was FREE, so its like finding a lottery ticket on the street only to win the jackpot! 😀😀😀",
+  "Congratulations once again Onam Team!!! From set up to lightings, to that dome structure and the LED backdrop it was SPECTACULAR!! Anoop Shankar added the Chaar Chand with his soulful singing and his band of musicians! The beauty of this event, it was enjoyed by the entire PSN irrespective of what language we speak!",
+  "Anoop Sankar experience was just super awesome. Well organised by the entire Thattakam team. 🙏🙏🙏",
+  "Was simply the best... So kind of him to sing so many songs.. a humble person... I think was one of the best singing shows we have had in the past... Such a versatile singer.. 👏👏"
 ];
 
 // Hero slider
@@ -37,9 +42,11 @@ const heroPhotos = [
   "Gallery/Hero slider/515503810_10232002757706173_3243939598743829868_n.jpg",
   "Gallery/Hero slider/515733858_10162526609072296_664540732766483954_n.jpg",
   "Gallery/Hero slider/515935448_10162526360887296_8663058091710262468_n.jpg",
-  "Gallery/Hero slider/516779722_10162526359712296_3342126654708734186_n.jpg",
   "Gallery/Hero slider/516859216_10162526609592296_491945289108939416_n.jpg",
-  "Gallery/Hero slider/555963961_10162893632642296_1545083860713825479_n (1).jpg"
+  "Gallery/Hero slider/555963961_10162893632642296_1545083860713825479_n (1).jpg",
+  "Gallery/Hero slider/DSC_7328.jpg",
+  "Gallery/Hero slider/WhatsApp Image 2026-06-28 at 7.49.25 AM.jpeg",
+  "Gallery/Hero slider/WhatsApp Image 2026-06-28 at 7.49.26 AM.jpeg"
 ];
 const heroSlider = document.getElementById("heroSlider");
 heroPhotos.forEach((src, i) => {
@@ -96,12 +103,22 @@ const yearPhotos2024 = [
   { src: "Gallery/Previous years/2024/1.jpg", label: "2024" },
   { src: "Gallery/Previous years/2024/2.jpg", label: "2024" },
   { src: "Gallery/Previous years/2024/3.jpg", label: "2024" },
-  { src: "Gallery/Previous years/2024/AnoopShankar.jpg", label: "2024 — Anoop Shankar Experience" }
+  { src: "Gallery/Previous years/2024/AnoopShankar.jpg", label: "2024 — Anoop Shankar Experience" },
+  { src: "Gallery/Previous years/2024/DSC_6966.jpg", label: "2024" },
+  { src: "Gallery/Previous years/2024/DSC_7328.jpg", label: "2024" }
 ];
 const yearPhotos2025 = [
   { src: "Gallery/Previous years/2025/1.jpg", label: "2025" },
-  { src: "Gallery/Previous years/2025/2.jpg", label: "2025" },
-  { src: "Gallery/Previous years/2025/3.jpg", label: "2025" }
+  { src: "Gallery/Previous years/2025/PonnOnam2025-57.jpg", label: "2025" },
+  { src: "Gallery/Previous years/2025/PonnOnam2025_Theyyam-11.jpg", label: "2025 — Theyyam" },
+  { src: "Gallery/Previous years/2025/PonnOnam2025_Theyyam-3.jpg", label: "2025 — Theyyam" },
+  { src: "Gallery/Previous years/2025/Gemini_Generated_Image_8kdpoa8kdpoa8kdp.png", label: "2025" },
+  { src: "Gallery/Previous years/2025/WhatsApp Image 2026-06-28 at 7.49.24 AM (2).jpeg", label: "2025" },
+  { src: "Gallery/Previous years/2025/WhatsApp Image 2026-06-28 at 7.49.25 AM (1).jpeg", label: "2025" },
+  { src: "Gallery/Previous years/2025/WhatsApp Image 2026-06-28 at 7.49.25 AM (2).jpeg", label: "2025" },
+  { src: "Gallery/Previous years/2025/WhatsApp Image 2026-06-28 at 7.49.25 AM (3).jpeg", label: "2025" },
+  { src: "Gallery/Previous years/2025/WhatsApp Image 2026-06-28 at 7.49.25 AM.jpeg", label: "2025" },
+  { src: "Gallery/Previous years/2025/WhatsApp Image 2026-06-28 at 7.49.26 AM.jpeg", label: "2025" }
 ];
 function renderYearsStrip(containerId, yearPhotos) {
   const strip = document.getElementById(containerId);
